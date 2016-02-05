@@ -1,0 +1,52 @@
+//
+//  ALGaugeKit.xcconfig
+//  ALGaugeKit
+//
+//  Created by Alf Watt on 02/01/16.
+//  Copyright © 2016 AutomaticLabs. All rights reserved.
+//
+
+#include "../Carthage/Checkouts/xcconfigs/iOS/iOS-Framework.xcconfig"
+
+// The name ("common name") of a valid code-signing certificate in a keychain
+// within your keychain path. A missing or invalid certificate will cause a
+// build error.
+CODE_SIGN_IDENTITY[sdk=iphoneos*] = iPhone Developer
+
+// Code will load on this and later versions of iOS.  Framework APIs that are
+// unavailable in earlier versions will be weak-linked; your code should check
+// for null function pointers or specific system versions before calling newer
+// APIs.
+IPHONEOS_DEPLOYMENT_TARGET = 9.0
+
+// This is the project-relative path to the plist file that contains the
+// Info.plist information used by bundles.
+INFOPLIST_FILE = $(TARGET_NAME)/Info.plist
+
+// The build system uses the selected device to set the correct value for the
+// UIDeviceFamily key it adds to the target's Info.plist file.
+TARGETED_DEVICE_FAMILY = 1,2
+
+// This is a list of paths to folders containing frameworks to be searched by
+// the compiler for both included or imported header files when compiling C,
+// Objective-C, C++, or Objective-C++, and by the linker for frameworks used by
+// the product. Paths are delimited by whitespace, so any paths with spaces in
+// them need to be properly quoted.
+// 
+// FRAMEWORK_SEARCH_PATHS = $(inherited) Carthage/Build/iOS
+
+// This setting defines the the current version of the project. The value must
+// be a integer or floating point number like 57 or 365.8.
+CURRENT_PROJECT_VERSION = 1
+
+// Selects the process used for version-stamping generated files.
+VERSIONING_SYSTEM = apple-generic
+
+// Determines the compatibility version of the resulting library, bundle, or
+// framework binary.
+DYLIB_COMPATIBILITY_VERSION = 1
+
+// When enabled, this causes the compiler and linker to disallow use of APIs
+// that are not available to app extensions and to disallow linking to
+// frameworks that have not been built with this setting enabled.
+APPLICATION_EXTENSION_API_ONLY = NO
