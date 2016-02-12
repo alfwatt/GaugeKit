@@ -29,6 +29,10 @@ static CGFloat const LevelIndicatorRingWidth = 10;
     [super layoutSubviews];
     self.indicatorText.frame = self.bounds;
     self.indicatorLayer.frame = self.bounds;
+//    NSLog(@"<%@ %p layoutSubviews frame: %@ layer frame: %@ layer bounds: %@>",
+//        self.class, self, NSStringFromCGRect(self.frame),
+//        NSStringFromCGRect(self.style == ALLevelIndicatorStyleText ? self.indicatorText.frame : self.indicatorLayer.frame),
+//        NSStringFromCGRect(self.style == ALLevelIndicatorStyleText ? self.indicatorText.bounds : self.indicatorLayer.bounds));
 }
 
 #pragma mark - ALBorderedView

@@ -77,7 +77,7 @@ CGPoint ALCGPointOnLineToPointAtDistance(CGPoint from, CGPoint to, CGFloat dista
 }
 
 - (void)layoutSubviews {
-    self.borderLayer.frame = self.bounds;
+    self.borderLayer.frame = self.frame;
 //    NSLog(@"<%@ %p layoutSubviews frame: %@ layer frame: %@ layer bounds: %@>",
 //        self.class, self, NSStringFromCGRect(self.frame), NSStringFromCGRect(self.borderLayer.frame), NSStringFromCGRect(self.borderLayer.bounds));
 }
