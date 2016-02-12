@@ -47,15 +47,6 @@ typedef NS_ENUM(NSInteger, ALLevelIndicatorStyle) {
 /*! @abstract the data source for the indicator implmeneting the ALIndicatorDataSource protocol */
 @property (nonatomic, weak) id<ALIndicatorDataSource> dataSource;
 
-/*! @abstract smallest number displayable on the indicator, default is 0 */
-@property (nonatomic, assign) CGFloat minValue;
-
-/*! @abstract largest number displayable on the indicator, default is 1 */
-@property (nonatomic, assign) CGFloat maxValue;
-
-/*! @abstract current percentage of the max that is displayed on the indicator */
-@property (nonatomic, readonly) CGFloat indicatorPercent;
-
 // TODO @property (nonatomic, assign) CGFloat minAngle; // angle of the min value for circular indicators
 // TODO @property (nonatomic, assign) CGFloat maxAngle; // angle of the max value for circular indicators
 // TODO @property (nonatomic, assign) NSInteger valueDivisions; // number of value divisions (tick-marks)
@@ -67,7 +58,7 @@ typedef NS_ENUM(NSInteger, ALLevelIndicatorStyle) {
 /*! @abstract data source protocol for a single-value indicator view */
 @protocol ALIndicatorDataSource <NSObject>
 
-/*! @abstract position of the indicator, by default a value between 0-1 */
+/*! @abstract position of the indicator, a scaled value between 0-1 */
 @property (nonatomic, readonly) CGFloat indicatorPosition;
 
 @end
