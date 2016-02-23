@@ -15,6 +15,8 @@
 		D355F4C11C601FB000481661 /* ALTimeSeriesView.h in Headers */ = {isa = PBXBuildFile; fileRef = D355F4B71C601FB000481661 /* ALTimeSeriesView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D355F4C21C601FB000481661 /* ALTimeSeriesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D355F4B81C601FB000481661 /* ALTimeSeriesView.m */; };
 		D355F4C41C601FD200481661 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D355F4C31C601FD200481661 /* UIKit.framework */; };
+		D3F775851C7BDDFA00AE1631 /* ALHistogramView.h in Headers */ = {isa = PBXBuildFile; fileRef = D3F775831C7BDDFA00AE1631 /* ALHistogramView.h */; };
+		D3F775861C7BDDFA00AE1631 /* ALHistogramView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F775841C7BDDFA00AE1631 /* ALHistogramView.m */; };
 		F329E86CA31EACB3982FB7A5 /* ALGaugeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 840053A737C9A765B2EABDC3 /* ALGaugeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		D355F4B71C601FB000481661 /* ALTimeSeriesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALTimeSeriesView.h; sourceTree = "<group>"; };
 		D355F4B81C601FB000481661 /* ALTimeSeriesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALTimeSeriesView.m; sourceTree = "<group>"; };
 		D355F4C31C601FD200481661 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D3F775831C7BDDFA00AE1631 /* ALHistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALHistogramView.h; sourceTree = "<group>"; };
+		D3F775841C7BDDFA00AE1631 /* ALHistogramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALHistogramView.m; sourceTree = "<group>"; };
 		E87B4C5FA183BFE8A7A68CB5 /* Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Framework.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/Framework.xcconfig; sourceTree = "<group>"; };
 		F3B1C4DACAD726790F0E53D7 /* ALGaugeKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = ALGaugeKit.xcconfig; path = ALGaugeKit/ALGaugeKit.xcconfig; sourceTree = "<group>"; };
 		F8CE5BDD97575D2BEC240416 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -148,6 +152,8 @@
 				D355F4B41C601FB000481661 /* ALIndicatorView.m */,
 				D355F4B71C601FB000481661 /* ALTimeSeriesView.h */,
 				D355F4B81C601FB000481661 /* ALTimeSeriesView.m */,
+				D3F775831C7BDDFA00AE1631 /* ALHistogramView.h */,
+				D3F775841C7BDDFA00AE1631 /* ALHistogramView.m */,
 			);
 			path = ALGaugeKit;
 			sourceTree = "<group>";
@@ -199,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D355F4BD1C601FB000481661 /* ALIndicatorView.h in Headers */,
+				D3F775851C7BDDFA00AE1631 /* ALHistogramView.h in Headers */,
 				F329E86CA31EACB3982FB7A5 /* ALGaugeKit.h in Headers */,
 				D355F4B91C601FB000481661 /* ALBorderedView.h in Headers */,
 				D355F4C11C601FB000481661 /* ALTimeSeriesView.h in Headers */,
@@ -295,6 +302,7 @@
 			files = (
 				D355F4BE1C601FB000481661 /* ALIndicatorView.m in Sources */,
 				D355F4BA1C601FB000481661 /* ALBorderedView.m in Sources */,
+				D3F775861C7BDDFA00AE1631 /* ALHistogramView.m in Sources */,
 				D355F4C21C601FB000481661 /* ALTimeSeriesView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
