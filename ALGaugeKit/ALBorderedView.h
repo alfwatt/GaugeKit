@@ -1,14 +1,12 @@
 //
-//  ALBorderedView.h
-//  Automatic
-//
-//  Created by Alf Watt on 2/1/16.
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+
+#pragma mark Line Widths
 
 /*! @const ALBorderlineWidth - default width of a border line */
 extern CGFloat const ALBorderlineWidth;
@@ -21,6 +19,8 @@ extern CGFloat const ALFinelineWidth;
 
 /*! @const ALBoldlineWidth - default width of a thick line */
 extern CGFloat const ALBoldlineWidth;
+
+#pragma mark - Geometry Functions
 
 /*! @returns the largest square which can be centered in the rectangle provided */
 CGRect ALCGRectSquareInRect(CGRect rect);
@@ -69,7 +69,7 @@ CGPoint ALCGPointOnLineToPointAtDistance(CGPoint from, CGPoint to, CGFloat dista
 /*! @abstract the layer mask of the border */
 @property (nonatomic, readonly) CAShapeLayer* borderMask;
 
-#pragma mark -
+#pragma mark - Subclass Overrides
 
 /*! @abstract overriden by subclasses to initilize the view */
 - (void) initView;

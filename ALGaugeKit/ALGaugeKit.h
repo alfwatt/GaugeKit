@@ -1,8 +1,4 @@
 //
-//  ALGaugeKit.h
-//  Automatic
-//
-//  Created by Alf Watt on 2/1/16.
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
@@ -16,4 +12,6 @@ FOUNDATION_EXPORT const unsigned char ALGaugeKitVersionString[];
 
 #import <ALGaugeKit/ALBorderedView.h>
 #import <ALGaugeKit/ALIndicatorView.h>
+#import <ALGaugeKit/ALTimelineView.h>
 #import <ALGaugeKit/ALTimeSeriesView.h>
+#import <ALGaugeKit/ALHistogramView.h>

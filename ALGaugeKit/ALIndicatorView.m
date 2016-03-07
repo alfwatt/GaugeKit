@@ -1,8 +1,4 @@
 //
-//  ALIndicatorView.m
-//  Automatic
-//
-//  Created by Alf Watt on 2/1/16.
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
@@ -10,7 +6,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-static CGFloat const LevelIndicatorRingWidth = 10;
+static CGFloat const LevelIndicatorRingWidth = 15;
 
 #pragma mark - Private
 

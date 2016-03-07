@@ -1,14 +1,10 @@
 //
-//  ALTimeSeriesView.h
-//  Automatic
-//
-//  Created by Alf Watt on 2/1/16.
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#import "ALBorderedView.h"
+#import <ALGaugeKit/ALTimelineView.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -17,13 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark -
 
 /*! @abstract for viewing a plot of time series data */
-@interface ALTimeSeriesView : ALBorderedView
+@interface ALTimeSeriesView : ALTimelineView
 
 /*! @abstract provides sample data to the view */
-@property(nonatomic, weak) id<ALTimeSeriesDataSource> dataSource;
-
-/*! @abstract multiplier for the default 1 second per pixel time scale */
-@property(nonatomic, assign) CGFloat timeScale;
+@property (nonatomic, weak) id<ALTimeSeriesDataSource> dataSource;
 
 @end
 

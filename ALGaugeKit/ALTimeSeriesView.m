@@ -1,8 +1,4 @@
 //
-//  ALTimeSeriesView.m
-//  Automatic
-//
-//  Created by Alf Watt on 2/1/16.
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
@@ -13,7 +9,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Private
 
 @interface ALTimeSeriesView ()
-@property (nonatomic,retain) CAShapeLayer* timeSeries;
+@property (nonatomic, strong) CAShapeLayer *timeSeries;
 @end
 
 #pragma mark -
@@ -35,7 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
     [super initView];
     self.fillColor = [UIColor clearColor];
     self.dataSource = nil;
-    self.timeScale = 0.5f;
     self.timeSeries = [CAShapeLayer new];
     [self.layer addSublayer:self.timeSeries];
 }
@@ -70,10 +65,10 @@ NS_ASSUME_NONNULL_BEGIN
 
     // we have a list of visible samples, draw then into our view's frame
     for (NSDate *sampleDate in visibleSamples) {
-        NSTimeInterval sampleInterval = fabs([sampleDate timeIntervalSinceDate:now]); // how long ago was the sample taken
+//        NSTimeInterval sampleInterval = fabs([sampleDate timeIntervalSinceDate:now]); // how long ago was the sample taken
         CGFloat samplePercentage = [self.dataSource sampleAtDate:sampleDate];
         CGRect graphFrame = self.timeSeries.bounds;
-        CGFloat sampleX = (graphFrame.size.width - ((CGFloat)sampleInterval / self.timeScale));
+        CGFloat sampleX = [self horizontalPositionOfDate:sampleDate];
         CGFloat sampleY = (graphFrame.size.height - (graphFrame.size.height * samplePercentage));
         CGPoint samplePoint = CGPointMake(sampleX,sampleY);
         if( !lastSample) {

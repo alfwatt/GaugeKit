@@ -1,8 +1,4 @@
 //
-//  ALIndicatorView.h
-//  Automatic
-//
-//  Created by Alf Watt on 2/1/16.
 //  Copyright (c) 2015 Automatic Labs. All rights reserved.
 //
 
@@ -49,7 +45,7 @@ typedef NS_ENUM(NSInteger, ALLevelIndicatorStyle) {
 
 // TODO @property (nonatomic, assign) CGFloat minAngle; // angle of the min value for circular indicators
 // TODO @property (nonatomic, assign) CGFloat maxAngle; // angle of the max value for circular indicators
-// TODO @property (nonatomic, assign) NSInteger valueDivisions; // number of value divisions (tick-marks)
+// TODO @property (nonatomic, assign) NSUInteger valueDivisions; // number of value divisions (tick-marks)
 
 @end
 
