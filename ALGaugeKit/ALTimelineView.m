@@ -26,7 +26,7 @@ static NSTimeInterval const ALTimelineZeroOffset = 0.0f;
 
 - (CGFloat)horizontalPositionOfDate:(NSDate *)timelineDate {
     NSTimeInterval elapsed = [timelineDate timeIntervalSinceDate:self.mostRecentVisibleDate];
-    return (self.bounds.size.width - (elapsed * self.timeScale));
+    return (self.bounds.size.width - ((CGFloat)elapsed * self.timeScale));
 }
 
 #pragma mark - ALBorderedView

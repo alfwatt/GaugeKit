@@ -424,6 +424,13 @@
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				WARNING_CFLAGS = (
+					"-Wno-error=unknown-warning-option",
+					"-Wno-gcc-compat",
+					"-Wno-unused-const-variable",
+					"-Wno-nullability-completeness",
+					"-Wall",
+				);
 			};
 			name = Debug;
 		};
@@ -440,6 +447,13 @@
 			baseConfigurationReference = 43A1FB0707B9CF03E21C0B4F /* Release.xcconfig */;
 			buildSettings = {
 				GCC_NO_COMMON_BLOCKS = YES;
+				WARNING_CFLAGS = (
+					"-Wno-error=unknown-warning-option",
+					"-Wno-gcc-compat",
+					"-Wno-unused-const-variable",
+					"-Wno-nullability-completeness",
+					"-Wall",
+				);
 			};
 			name = Release;
 		};
