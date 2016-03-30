@@ -61,11 +61,11 @@ NS_ASSUME_NONNULL_BEGIN
         }]];
     }
 
-    // NSLog(@"<%@ %p updateView %lu samples %lu visible between %@ and %@>", self.class, self, self.dataSource.sampleDates.count, visibleSamples.count, then, now);
+    // NSLog(@"<%@ %p updateView %lu samples %lu visible between %@ and %@>",
+    //     self.class, self, self.dataSource.sampleDates.count, visibleSamples.count, then, now);
 
     // we have a list of visible samples, draw then into our view's frame
     for (NSDate *sampleDate in visibleSamples) {
-//        NSTimeInterval sampleInterval = fabs([sampleDate timeIntervalSinceDate:now]); // how long ago was the sample taken
         CGFloat samplePercentage = [self.dataSource sampleAtDate:sampleDate];
         CGRect graphFrame = self.timeSeries.bounds;
         CGFloat sampleX = [self horizontalPositionOfDate:sampleDate];
@@ -80,7 +80,8 @@ NS_ASSUME_NONNULL_BEGIN
         lastSample = sampleDate;
     }
 
-    // NSLog(@"updateView path bounds: %@ series bounds: %@ series frame: %@", NSStringFromCGRect(seriesPath.bounds), NSStringFromCGRect(self.timeSeries.bounds), NSStringFromCGRect(self.timeSeries.bounds));
+    // NSLog(@"updateView path bounds: %@ series bounds: %@ series frame: %@",
+    //     NSStringFromCGRect(seriesPath.bounds), NSStringFromCGRect(self.timeSeries.bounds), NSStringFromCGRect(self.timeSeries.bounds));
 
     self.timeSeries.path = seriesPath.CGPath;
     self.timeSeries.fillColor = self.fillColor.CGColor;
