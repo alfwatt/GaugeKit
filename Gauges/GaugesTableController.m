@@ -1,8 +1,4 @@
-//
-//  Copyright © 2016 AutomaticLabs. All rights reserved.
-//
-
-#import <ALGaugeKit/ALGaugeKit.h>
+#import <GaugeKit/GaugeKit.h>
 
 #import "GaugesDataSource.h"
 #import "GaugesTableViewCell.h"
@@ -22,14 +18,14 @@
     static NSArray<NSNumber *>*styles = nil;
     if( !styles) {
         styles = @[
-            @(ALLevelIndicatorStyleText),
-            @(ALLevelIndicatorStyleVertical),
-            @(ALLevelIndicatorStyleHorizontal),
-            @(ALLevelIndicatorStyleSquare),
-            @(ALLevelIndicatorStyleCircle),
-            @(ALLevelIndicatorStyleRing),
-            @(ALLevelIndicatorStylePie),
-            @(ALLevelIndicatorStyleDial)
+            @(ILLevelIndicatorStyleText),
+            @(ILLevelIndicatorStyleVertical),
+            @(ILLevelIndicatorStyleHorizontal),
+            @(ILLevelIndicatorStyleSquare),
+            @(ILLevelIndicatorStyleCircle),
+            @(ILLevelIndicatorStyleRing),
+            @(ILLevelIndicatorStylePie),
+            @(ILLevelIndicatorStyleDial)
         ];
     }
     return styles;
@@ -58,7 +54,7 @@
     NSUInteger gaugeIndex = [indexPath indexAtPosition:(indexPath.length-1)];
     NSInteger gaugeStyle = [[GaugesTableController gaugeStyles][gaugeIndex] integerValue];
     GaugesTableViewCell *cell = (GaugesTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"GaugeCell" forIndexPath:indexPath];
-    cell.indicatorView.style = (ALLevelIndicatorStyle)gaugeStyle;
+    cell.indicatorView.style = (ILLevelIndicatorStyle)gaugeStyle;
     cell.indicatorView.dataSource = self.gaugesDataSource;
     cell.indicatorView.borderColor = [UIColor grayColor];
     cell.timeseriesView.borderColor = [UIColor grayColor];

@@ -1,10 +1,6 @@
-//
-//  Copyright © 2016 AutomaticLabs. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
-#import <ALGaugeKit/ALGaugeKit.h>
+#import <GaugeKit/GaugeKit.h>
 
-@interface GaugesDataSource : NSObject <ALIndicatorDataSource, ALTimeSeriesDataSource, ALHistagramDataSource>
+@interface GaugesDataSource : NSObject <ILIndicatorDataSource, ILTimeSeriesDataSource, ILHistagramDataSource>
 
 @end

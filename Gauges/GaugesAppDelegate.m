@@ -1,7 +1,3 @@
-//
-//  Copyright © 2016 AutomaticLabs. All rights reserved.
-//
-
 #import "GaugesAppDelegate.h"
 
 @interface GaugesAppDelegate ()
@@ -40,3 +36,11 @@
 }
 
 @end
+
+#pragma mark -
+
+int main(int argc, char * argv[]) {
+    @autoreleasepool {
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([GaugesAppDelegate class]));
+    }
+}

@@ -1,18 +1,14 @@
-//
-//  Copyright © 2016 AutomaticLabs. All rights reserved.
-//
-
 #import "GaugesDataSource.h"
 
 @implementation GaugesDataSource
 
-#pragma mark - ALIndicatorDataSource
+#pragma mark - ILIndicatorDataSource
 
 - (CGFloat)indicatorPosition {
     return 0.5;
 }
 
-#pragma mark - ALTimeSeriesDataSource
+#pragma mark - ILTimeSeriesDataSource
 
 - (NSArray<NSDate *>*)sampleDates {
     return @[[NSDate date]];
@@ -30,7 +26,7 @@
     return @[];
 }
 */
-#pragma mark - ALHistogramDataSource
+#pragma mark - ILHistogramDataSource
 
 - (NSTimeInterval)bucketInterval {
     return 10;
