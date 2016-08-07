@@ -1,7 +1,17 @@
 
 # GaugeKit.framework
 
-## Real-time gauges for iOS, macOS and tvOS
+## Real-time gauges for iOS
+
+## To Do
+
+- macOS and tvOS views
+
+## History
+
+0.3 GaugeKit adopted by iStumbler Labs
+0.2 Gauges test app added
+0.1 ILGaugeKit created at Automatic Labs
 
 ## License
 
