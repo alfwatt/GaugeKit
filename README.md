@@ -9,9 +9,9 @@
 
 ## History
 
-0.3 GaugeKit adopted by iStumbler Labs
-0.2 Gauges test app added
-0.1 ILGaugeKit created at Automatic Labs
+    0.3 GaugeKit adopted by iStumbler Labs
+    0.2 Gauges test app added
+    0.1 ILGaugeKit created at Automatic Labs
 
 ## License
 
