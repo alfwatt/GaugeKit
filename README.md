@@ -1,7 +1,21 @@
 
 # GaugeKit.framework
 
-## Real-time gauges for iOS
+## Real-time gauge views for iOS
+
+- Indicator, with Styles
+    - Text
+    - Vertical Bar
+    - Horizontal Bar
+    - Square
+    - Circle
+    - Ring
+    - Pie
+    - Dial
+
+- Timelines, including
+    - Time Series
+    - Histogram
 
 ## To Do
 
