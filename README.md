@@ -1,7 +1,7 @@
 
 # GaugeKit.framework
 
-## Real-time gauge views for iOS
+## Real-Time Gauge Views for iOS
 
 - Indicator, with Styles
     - Text
@@ -19,7 +19,8 @@
 
 ## To Do
 
-- macOS and tvOS views
+- timeline scrub and zoom
+- macOS and tvOS adaptions
 
 ## History
 
